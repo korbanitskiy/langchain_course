@@ -1,0 +1,20 @@
+Pinecone is a fully managed vector database designed for machine learning and AI applications. It helps you store, index and search high dimensional vector embeddings like those from text, images or user data quickly and accurately. This makes it ideal for tasks like semantic search, recommendation systems and similarity matching where traditional databases fall short.
+
+Pinecone handles scaling, filtering and real time updates automatically so you can focus on building your application without managing infrastructure.
+
+What are Vector Databases?
+A vector database is a specialized type of database designed to store, index and search high dimensional vector representations of data known as embeddings. Unlike traditional databases that rely on exact matches vector databases use similarity search techniques such as cosine similarity or Euclidean distance to find items that are semantically or visually similar.
+Key Features of Pinecone Vector Database
+Scalable and Managed Infrastructure: Pinecone is fully managed which means you don’t have to worry about provisioning servers or handling infrastructure. It automatically scales with your data and traffic needs.
+Real Time Similarity Search: It allows fast vector similarity search with low latency even at scale. This is ideal for applications like search engines or recommendation systems.
+High Dimensional Vector Support: Pinecone efficiently handles vectors with hundreds or thousands of dimensions which is important when working with complex embeddings from models like BERT or CLIP.
+Approximate Nearest Neighbor (ANN) Search: Pinecone uses optimized ANN algorithms to retrieve the closest vectors quickly. It balances speed and accuracy for large scale similarity tasks.
+How do we use Pinecone for Vector Database?
+Step 1: Sign Up and Log In
+Sign up on Pinecone's website and log in to your account. This gives you access to their vector database platform where you can create and manage your vector indexes.
+
+Step 2: Get Your API Key
+After logging in navigate to your account settings to find and copy your Pinecone API key. This key is needed to authenticate your requests when interacting with Pinecone’s services programmatically.
+
+Step 3: Install Pinecone Python Client
+Run pip install pinecone in your terminal to install the Pinecone Python client library. This lets you connect to and use Pinecone’s vector database from your Python code.

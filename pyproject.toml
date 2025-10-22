@@ -8,7 +8,11 @@ dependencies = [
     "black>=25.9.0",
     "isort>=6.1.0",
     "langchain>=0.3.27",
+    "langchain-chroma>=0.2.6",
+    "langchain-community>=0.3.31",
     "langchain-openai>=0.3.34",
+    "langchain-pinecone>=0.2.12",
     "langchain-tavily>=0.2.12",
+    "langchainhub>=0.1.21",
     "python-dotenv>=1.1.1",
 ]
