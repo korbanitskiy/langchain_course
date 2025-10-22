@@ -1,15 +1,16 @@
-import os
-from dotenv import load_dotenv
 import asyncio
-from langchain_community.document_loaders import TextLoader
-from langchain_chroma import Chroma
-from langchain_openai import OpenAIEmbeddings, ChatOpenAI
-from langchain_text_splitters import CharacterTextSplitter
-from langchain_core.prompts import PromptTemplate
-from langchain.chains.retrieval import create_retrieval_chain
-from langchain.chains.combine_documents import create_stuff_documents_chain
-from langchain import hub
+import os
 from pathlib import Path
+
+from dotenv import load_dotenv
+from langchain import hub
+from langchain.chains.combine_documents import create_stuff_documents_chain
+from langchain.chains.retrieval import create_retrieval_chain
+from langchain_chroma import Chroma
+from langchain_community.document_loaders import TextLoader
+from langchain_core.prompts import PromptTemplate
+from langchain_openai import ChatOpenAI, OpenAIEmbeddings
+from langchain_text_splitters import CharacterTextSplitter
 
 CURRENT_PATH = Path(os.path.dirname(__file__))
 
@@ -26,8 +27,6 @@ vector_store = Chroma(
 
 
 query = "What is the Pinecone in machine learning?"
-
-
 
 
 def load_data(filename: str):
@@ -66,8 +65,6 @@ def main():
 
     # response_no_rag = get_response_no_rag()
     # print(response_no_rag.content)
-
-
 
 
 if __name__ == "__main__":
